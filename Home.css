@@ -1,58 +1,60 @@
-body{
+body {
     background-color: honeydew;
 }
 
-header{
+header {
     font-weight: bolder;
     color: black;
     font-size: xx-large;
-    text-align: center;
+    text-align: right;
     padding: 20px;
+    padding-right: 40px;
     background-color: red;
 }
 
-#navigate{
-    position: -webkit-sticky;
+#navigate {
     position: sticky;
     top: 0%;
     z-index: 1;
 }
 
-.menu{
+.menu {
     margin: 0%;
     background-color: rgb(0, 0, 0, 0.5);
 }
 
-.menu li a{
+.menu li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu li a {
     color: white;
     font-size: 20px;
     text-decoration: none;
 }
 
-.menu li{
-    padding: 10px;
-    display: inline-block;
+.menu li:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    ;
 }
 
-.menu li:hover{
-    background-color: rgba(0, 0, 0, 0.7);;
-}
-
-.menu li .submenu{
+.menu li .submenu {
     background: #f2f2f2;
     display: none;
     position: absolute;
 }
 
-.menu li:hover .submenu{
-    display: block;	/* Display the dropdown */
+.menu li:hover .submenu {
+    display: block;
+    /* Display the dropdown */
 }
 
-.submenu li{
+.submenu li {
     display: block;
 }
 
-.submenu li a{
+.submenu li a {
     color: blue;
     font-size: 20px;
     text-decoration: none;
