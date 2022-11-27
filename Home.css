@@ -1,0 +1,59 @@
+body{
+    background-color: honeydew;
+}
+
+header{
+    font-weight: bolder;
+    color: black;
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+    background-color: red;
+}
+
+#navigate{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.menu{
+    margin: 0%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.menu li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu li{
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu li:hover{
+    background-color: rgba(0, 0, 0, 0.7);;
+}
+
+.menu li .submenu{
+    background: #f2f2f2;
+    display: none;
+    position: absolute;
+}
+
+.menu li:hover .submenu{
+    display: block;	/* Display the dropdown */
+}
+
+.submenu li{
+    display: block;
+}
+
+.submenu li a{
+    color: blue;
+    font-size: 20px;
+    text-decoration: none;
+}
