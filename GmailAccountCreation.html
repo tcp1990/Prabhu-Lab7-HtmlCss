@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Gmail Account Creation</title>
+    <style>
+        h4 {
+            text-align: center;
+        }
+
+        .createAccount {
+            color: white;
+            width: 300px;
+            padding: 10px;
+            position: absolute;
+            font-size: 20px;
+            top: 5%;
+            left: 30%;
+            line-height: 50px;
+            border-radius: 10px;
+            background: transparent;
+            text-align: left;
+            vertical-align: middle;
+            border-style: ridge;
+        }
+
+        input {
+            height: 30px;
+            width: 100%;
+        }
+
+        input:focus {
+            background-color: steelblue;
+            opacity: .35;
+        }
+
+        button {
+            width: 120px;
+            height: 40px;
+            padding: 5px;
+            vertical-align: middle;
+            font-size: 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-radius: 6px;
+            background-color: #D7A1F9;
+            color: white;
+        }
+
+        .resetButton {
+            float: left;
+        }
+
+        .submitButton {
+            float: right;
+        }
+
+        #myVideo {
+            position: fixed;
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="Background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="createAccount">
+        <h4>Create Gmail Account</h4>
+        <form action="Log In.html">
+
+            <input type="text" name="F_name" placeholder="Full Name" required>
+
+            <input type="phone" name="u_phone" placeholder="Contact Number" required>
+
+            <input type="email" name="u_email" placeholder="Enter Email Id" required>
+
+            <button class="resetButton">Reset</button>
+            <button class="submitButton">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
